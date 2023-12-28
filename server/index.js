@@ -1,8 +1,8 @@
-const express = require("express");
-const cors = require("cors");
-const mockData = require("../__mock__/marketplaceData.json");
-const bodyParser = require("body-parser");
-const cacheControl = require("./cache-control");
+import express from "express";
+import cors from "cors";
+import mockData from "../__mock__/marketplaceData.json" assert { type: "json" };
+import bodyParser from "body-parser";
+import { cacheControl } from "./cache-control.js";
 
 const server = express();
 server.use(bodyParser.urlencoded({ extended: false }));
