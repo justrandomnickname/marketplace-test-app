@@ -9,7 +9,7 @@ type ShoppingCartProps = { className?: string };
 
 export const ShoppingCart: React.FC<ShoppingCartProps> = ({ className }) => {
   const context = useAppContext();
-  console.log(context?.cart);
+
   return (
     <section className={className}>
       Shopping Cart:
