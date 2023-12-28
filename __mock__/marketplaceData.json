@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name": "Шуруп",
+    "img": "https://1gai.ru/uploads/posts/2016-05/thumbs/1464071388_14.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Мотор",
+    "img": "https://1gai.ru/uploads/posts/2016-05/thumbs/1464071366_3.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Сцепление",
+    "img": "https://1gai.ru/uploads/posts/2016-05/thumbs/1464071385_20.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Чехол",
+    "img": "https://www.lenamccoder.com/wp-content/uploads/2018/01/ti-gu.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Молоток",
+    "img": "https://1gai.ru/uploads/posts/2016-05/thumbs/1464071385_20.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Отбойник",
+    "img": "https://www.lenamccoder.com/wp-content/uploads/2018/01/ti-gu.jpg"
+  }
+]
