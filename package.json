@@ -4,7 +4,7 @@
   "private": true,
   "main": "server",
   "scripts": {
-    "server": "node server/index.js"
+    "start": "node server/index.js"
   },
   "dependencies": {
     "body-parser": "^1.20.2",

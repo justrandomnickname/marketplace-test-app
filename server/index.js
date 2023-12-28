@@ -63,7 +63,7 @@ server.get("*", (request, response) => {
   return requestHandler(request, response);
 });
 
-server.listen(4000, (err) => {
+server.listen(process.env.PORT || 80, (err) => {
   if (err) throw err;
   console.log("> server ready port[4000]");
 });
