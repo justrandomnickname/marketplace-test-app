@@ -1,3 +1,4 @@
+import { API } from "./constants";
 import { MarketplaceRequest, MarketplaceRequestProps } from "./types";
 
 export const getMarketplaceData = async ({
@@ -6,7 +7,7 @@ export const getMarketplaceData = async ({
   ids = "",
 }: MarketplaceRequestProps): Promise<MarketplaceRequest> => {
   const marketplaceData = await fetch(
-    `http://localhost:4000/api/marketplace?p=${page}&search=${search}&ids=${ids}`
+    `${API}api/marketplace?p=${page}&search=${search}&ids=${ids}`
   )
     .then((response) => {
       return response;

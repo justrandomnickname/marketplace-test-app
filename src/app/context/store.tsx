@@ -32,7 +32,7 @@ export const AppContextProvider = ({
         setItems(response.items);
       });
     },
-    [getMarketplaceData, setItems]
+    [getMarketplaceData, setItems, items]
   );
 
   const addToCart = useCallback(
@@ -40,7 +40,7 @@ export const AppContextProvider = ({
       setItems(() => [...items, item]);
       shoppingCartService.setNewItem(item.id);
     },
-    [setItems]
+    [setItems, items]
   );
 
   useEffect(() => {
