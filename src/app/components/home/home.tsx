@@ -5,13 +5,13 @@ import "reactjs-popup/dist/index.css";
 
 import { AppContextProvider } from "@/app/context";
 
-import { Navbar } from "../navbar";
-import { ShoppingCart } from "../shopping-cart";
+import { Navbar } from "@/app/components/navbar";
+import { ShoppingCart } from "@/app/components/shopping-cart";
 
 import { StaticMarketplaceList } from "./marketplace-list";
+import { PopupNext } from "./popupText";
 
 import styles from "./styles.module.scss";
-import { PopupNext } from "./popupText";
 
 const Popup = dynamic(() => import("reactjs-popup"), { ssr: false });
 

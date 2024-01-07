@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+@mixin flex-with-center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@mixin button($text-color, $background-color) {
+  appearance: none;
+  background: $background-color;
+  border: 0;
+  color: $text-color;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  line-height: 1;
+  font-size: $font-small;
+  padding: 0px 30px 0px 30px;
+  height: 27px;
+  position: relative;
+}
+
+@mixin default-app-border($color) {
+  border: 2px solid $color;
+  border-radius: 0;
+}

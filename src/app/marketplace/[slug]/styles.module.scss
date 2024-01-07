@@ -1,10 +1,29 @@
+@import "/src/app/variables.scss";
+
+.navbar {
+  justify-content: left;
+  display: flex;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  padding-top: $primary-gap;
 
-  &__section {
-    width: 40%;
-    min-height: 100vh;
+  @media (max-width: $breakpoint-desktop) {
+    flex-direction: column-reverse;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__cart {
+    width: 350px;
+
+    @media (max-width: $breakpoint-desktop) {
+      width: 100%;
+      min-height: 200px;
+    }
   }
 }

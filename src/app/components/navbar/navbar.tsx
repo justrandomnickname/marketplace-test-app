@@ -3,7 +3,9 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-import { Input } from "../ui/input";
+import { Input } from "@/app/components/ui/input";
+
+import styles from "./styles.module.scss";
 
 export const Navbar: React.FC = () => {
   const router = useRouter();
@@ -19,9 +21,15 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <Input name={"search"} />
-      <button type="submit">Искать</button>
+    <form className={styles.navbar} onSubmit={onSubmit}>
+      <Input
+        className={styles.navbar__input}
+        placeholder="Введите текст"
+        name={"search"}
+      />
+      <button className={styles.navbar__bttn} type="submit">
+        Искать
+      </button>
     </form>
   );
 };

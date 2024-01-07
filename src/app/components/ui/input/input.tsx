@@ -1,12 +1,16 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { InputHTMLAttributes, useEffect, useState } from "react";
 import { useDebounce } from "use-debounce";
 
-type InputProps = { callbackFn?: (inputValue: string) => void; name?: string };
+type InputProps = InputHTMLAttributes<HTMLInputElement> & {
+  callbackFn?: (inputValue: string) => void;
+  name?: string;
+};
 
-export const Input: React.FC<InputProps> = ({ callbackFn, name }) => {
+export const Input: React.FC<InputProps> = (props) => {
+  const { callbackFn } = props;
+
   const [value, setValue] = useState("");
-
   const [debouncedVal] = useDebounce(value, 500);
 
   useEffect(() => {
@@ -20,6 +24,6 @@ export const Input: React.FC<InputProps> = ({ callbackFn, name }) => {
   };
 
   return (
-    <input type="text" value={value} name={name} onChange={handleOnChange} />
+    <input type="text" value={value} onChange={handleOnChange} {...props} />
   );
 };

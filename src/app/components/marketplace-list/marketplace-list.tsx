@@ -4,7 +4,7 @@ import cn from "classnames";
 import { MarketplaceItem } from "@/api";
 import { Card } from "./card";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 type MarketplaceListProps = { items: MarketplaceItem[]; className?: string };
 

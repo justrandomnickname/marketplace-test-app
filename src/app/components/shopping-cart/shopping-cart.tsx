@@ -12,7 +12,7 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = ({ className }) => {
 
   return (
     <section className={className}>
-      Shopping Cart:
+      <h1>Shopping Cart:</h1>
       <div className={styles.cards}>
         {context?.cart.map((item) => (
           <Card key={item.id} {...item} />

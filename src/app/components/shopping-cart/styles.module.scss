@@ -1,5 +1,7 @@
+@import "/src/app/variables.scss";
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: $primary-gap;
 }

@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+body {
+  background-color: $base-color;
+}
+
+.layout {
+  padding: 16px 102px 16px 102px;
+
+  @media (max-width: $breakpoint-desktop) {
+    padding: 16px 8px 16px 8px;
+  }
+}

@@ -39,10 +39,12 @@ export default function MarketplaceSearchPage({
 
   return (
     <AppContextProvider>
-      <Navbar />
+      <div className={styles.navbar}>
+        <Navbar />
+      </div>
       <main className={styles.wrapper}>
-        <MarketplaceList className={styles.wrapper__section} items={items} />
-        <ShoppingCart className={styles.wrapper__section} />
+        <MarketplaceList className={styles.wrapper__content} items={items} />
+        <ShoppingCart className={styles.wrapper__cart} />
       </main>
     </AppContextProvider>
   );
