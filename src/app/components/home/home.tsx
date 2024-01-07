@@ -12,6 +12,7 @@ import { StaticMarketplaceList } from "./marketplace-list";
 import { PopupNext } from "./popupText";
 
 import styles from "./styles.module.scss";
+import { getModalIsOpened, setModalIsOpened } from "./helpers";
 
 const Popup = dynamic(() => import("reactjs-popup"), { ssr: false });
 
@@ -28,7 +29,12 @@ export const HomePage = () => (
       </div>
     </div>
 
-    <Popup modal open={true} position="right center">
+    <Popup
+      modal
+      onClose={setModalIsOpened}
+      open={getModalIsOpened() || true}
+      position="right center"
+    >
       <PopupNext />
     </Popup>
   </AppContextProvider>
