@@ -17,7 +17,7 @@ export const Input: React.FC<InputProps> = (props) => {
     if (debouncedVal.length >= 2) {
       callbackFn?.(debouncedVal);
     }
-  }, [debouncedVal]);
+  }, [debouncedVal, callbackFn]);
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
