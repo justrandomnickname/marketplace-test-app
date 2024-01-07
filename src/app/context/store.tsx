@@ -47,7 +47,7 @@ export const AppContextProvider = ({
     const ids = shoppingCartService.getIds();
 
     fetchShoppingCartData(ids?.join(","));
-  }, [fetchShoppingCartData]);
+  }, []);
 
   return (
     <AppContext.Provider value={{ addToCart, cart: items }}>
